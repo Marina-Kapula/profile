@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Awesome Hugo blog</title>
+    <link>https://musical-space-halibut-r4p55wp674g5cx57w-1313.app.github.dev/fr-fr/posts/</link>
+    <description>Recent content in Posts on Awesome Hugo blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://musical-space-halibut-r4p55wp674g5cx57w-1313.app.github.dev/fr-fr/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Site de formulaires AMFI</title>
+      <link>https://musical-space-halibut-r4p55wp674g5cx57w-1313.app.github.dev/fr-fr/posts/amfi/</link>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://musical-space-halibut-r4p55wp674g5cx57w-1313.app.github.dev/fr-fr/posts/amfi/</guid>
+      
+      <description>&lt;p&gt;Un site avec des formulaires en ligne pour AMFI, créé avec Django pendant mon échange en Italie.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
