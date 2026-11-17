@@ -3,6 +3,7 @@ title: "AMFI forms website"
 date: 2026-11-17
 draft: false
 toc: false
+cover: 2019年的总结.jpg
 tags: ["Django", "Python", "HTML", "CSS"]
 ---
 
