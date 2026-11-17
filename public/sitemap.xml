@@ -1,60 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	
-		<sitemap>
-			<loc>https://musical-space-halibut-r4p55wp674g5cx57w-1313.app.github.dev/de-de/sitemap.xml</loc>
-			
-				<lastmod>2026-11-17T00:00:00+00:00</lastmod>
-			
-		</sitemap>
-	
-		<sitemap>
-			<loc>https://musical-space-halibut-r4p55wp674g5cx57w-1313.app.github.dev/en-gb/sitemap.xml</loc>
-			
-				<lastmod>2026-11-17T00:00:00+00:00</lastmod>
-			
-		</sitemap>
-	
-		<sitemap>
-			<loc>https://musical-space-halibut-r4p55wp674g5cx57w-1313.app.github.dev/fr-fr/sitemap.xml</loc>
-			
-				<lastmod>2026-11-17T00:00:00+00:00</lastmod>
-			
-		</sitemap>
-	
-		<sitemap>
-			<loc>https://musical-space-halibut-r4p55wp674g5cx57w-1313.app.github.dev/ja/sitemap.xml</loc>
-			
-				<lastmod>2026-11-17T00:00:00+00:00</lastmod>
-			
-		</sitemap>
-	
-		<sitemap>
-			<loc>https://musical-space-halibut-r4p55wp674g5cx57w-1313.app.github.dev/pt-br/sitemap.xml</loc>
-			
-				<lastmod>2026-11-17T00:00:00+00:00</lastmod>
-			
-		</sitemap>
-	
-		<sitemap>
-			<loc>https://musical-space-halibut-r4p55wp674g5cx57w-1313.app.github.dev/ru-ru/sitemap.xml</loc>
-			
-				<lastmod>2026-11-17T00:00:00+00:00</lastmod>
-			
-		</sitemap>
-	
-		<sitemap>
-			<loc>https://musical-space-halibut-r4p55wp674g5cx57w-1313.app.github.dev/zh-cn/sitemap.xml</loc>
-			
-				<lastmod>2026-11-17T00:00:00+00:00</lastmod>
-			
-		</sitemap>
-	
-		<sitemap>
-			<loc>https://musical-space-halibut-r4p55wp674g5cx57w-1313.app.github.dev/it/sitemap.xml</loc>
-			
-				<lastmod>2026-11-17T00:00:00+00:00</lastmod>
-			
-		</sitemap>
-	
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/posts/amfi/</loc>
+    <lastmod>2026-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pages/about/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+  </url>
+</urlset>

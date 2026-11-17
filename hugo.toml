@@ -1,4 +1,5 @@
 theme = "hugo-blog-awesome"
+disableLanguages = ["de-de", "fr-fr", "it", "ja", "pt-br", "ru-ru", "zh-cn"]
 title = "Awesome Hugo blog"
 baseURL = 'https://hba.sid.one/'
 
