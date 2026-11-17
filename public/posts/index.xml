@@ -14,7 +14,20 @@
       
       <guid>http://localhost:1313/posts/amfi/</guid>
       
-      <description>&lt;p&gt;A website with online forms for AMFI, built with Django during my exchange in Italy.&lt;/p&gt;</description>
+      <description>&lt;p&gt;During my Erasmus+ internship at Go Project in Italy, I built a website for AMFI. It replaces paper internship forms with online forms.&lt;/p&gt;
+&lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AMFI&lt;/strong&gt; adds teachers and students and fills in the main information.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The student&lt;/strong&gt; writes a weekly log of the internship.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The company tutor&lt;/strong&gt; writes comments and the final assessment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tools&#34;&gt;Tools&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Python and Django&lt;/li&gt;
+&lt;li&gt;HTML and CSS&lt;/li&gt;
+&lt;li&gt;Git and GitHub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Code: &lt;a href=&#34;https://github.com/Marina-Kapula/amfi&#34;&gt;github.com/Marina-Kapula/amfi&lt;/a&gt;&lt;/p&gt;</description>
       
     </item>
     

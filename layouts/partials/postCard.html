@@ -1,0 +1,26 @@
+<!-- Project card in the Posts list -->
+<article class="project-card">
+
+  <!-- Video or picture on the left -->
+  {{ with .Params.video }}
+  <a href="{{ $.RelPermalink }}" class="project-card-media">
+    <video src="{{ . | relURL }}" autoplay muted loop playsinline></video>
+  </a>
+  {{ else }}{{ with .Params.image }}
+  <a href="{{ $.RelPermalink }}" class="project-card-media">
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+  </a>
+  {{ end }}{{ end }}
+
+  <!-- Text on the right -->
+  <div class="project-card-text">
+    <h4 class="project-card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+    <time class="project-card-date">{{ .Date.Format "2 Jan 2006" }}</time>
+    {{ with .Params.tags }}
+    <div class="project-card-tags">
+      {{ range . }}<span class="project-card-tag">{{ . }}</span>{{ end }}
+    </div>
+    {{ end }}
+    {{ with .Params.description }}<p class="project-card-desc">{{ . }}</p>{{ end }}
+  </div>
+</article>

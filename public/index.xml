@@ -14,7 +14,36 @@
       
       <guid>http://localhost:1313/posts/amfi/</guid>
       
-      <description>&lt;p&gt;A website with online forms for AMFI, built with Django during my exchange in Italy.&lt;/p&gt;</description>
+      <description>&lt;p&gt;During my Erasmus+ internship at Go Project in Italy, I built a website for AMFI. It replaces paper internship forms with online forms.&lt;/p&gt;
+&lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AMFI&lt;/strong&gt; adds teachers and students and fills in the main information.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The student&lt;/strong&gt; writes a weekly log of the internship.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The company tutor&lt;/strong&gt; writes comments and the final assessment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tools&#34;&gt;Tools&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Python and Django&lt;/li&gt;
+&lt;li&gt;HTML and CSS&lt;/li&gt;
+&lt;li&gt;Git and GitHub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Code: &lt;a href=&#34;https://github.com/Marina-Kapula/amfi&#34;&gt;github.com/Marina-Kapula/amfi&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/pages/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/about/</guid>
+      
+      <description>&lt;p&gt;Hi! I&amp;rsquo;m Maryna Kapula, an ICT student at Esedu (South Savo Vocational College) in Mikkeli, Finland. I&amp;rsquo;m learning web development, and I&amp;rsquo;m especially interested in design.&lt;/p&gt;
+&lt;p&gt;Before IT, I studied to be an artist-restorer at Tulchyn College of Culture in Ukraine. My background in art is where my interest in design comes from.&lt;/p&gt;
+&lt;p&gt;Right now I&amp;rsquo;m doing an Erasmus+ internship at Go Project in Italy.&lt;/p&gt;
+&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Intern (Erasmus+)&lt;/strong&gt;
+Go Project · Italy · November 2026&lt;/p&gt;</description>
       
     </item>
     

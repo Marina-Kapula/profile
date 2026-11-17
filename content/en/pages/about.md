@@ -1,24 +1,30 @@
 ---
-title: About
-description: 'Hugo, the world''s fastest framework for building websites'
-author: Hugo Authors
-exclude_from_rss: true
+title: "About"
+toc: false
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Hi! I'm Maryna Kapula, an ICT student at Esedu (South Savo Vocational College) in Mikkeli, Finland. I'm learning web development, and I'm especially interested in design.
 
-Hugo makes use of a variety of open source projects including:
+Before IT, I studied to be an artist-restorer at Tulchyn College of Culture in Ukraine. My background in art is where my interest in design comes from.
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+Right now I'm doing an Erasmus+ internship at Go Project in Italy.
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+## Experience
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+**Intern (Erasmus+)**
+Go Project · Italy · November 2026
 
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+## Education
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+**Information and Communications Technology (ICT)**
+Esedu, South Savo Vocational College · Mikkeli, Finland
+2025 – present
+
+**Artist-restorer**
+Tulchyn College of Culture · Tulchyn, Ukraine
+2017 – 2021
+
+## Contact
+
+Email: maryna.kapula@gmail.com
+GitHub: [Marina-Kapula](https://github.com/Marina-Kapula)
