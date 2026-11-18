@@ -1,0 +1,198 @@
+@use "sass:math";
+@use "sass:list";
+
+// ================= Projects list layout =================
+
+// Make the Projects page wider
+.wrapper.list-page {
+  max-width: 1000px;
+}
+
+// "Projects" title on the left
+.list-page .header-title {
+  text-align: left;
+}
+
+// Card: picture on the left, text on the right
+.project-card {
+  display: flex;
+  gap: 28px;
+  padding: 20px 0;
+  align-items: flex-start;
+}
+
+// Picture: same size for every project
+.project-card-media {
+  flex: 0 0 300px;
+  img, video {
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+  }
+}
+
+// Title starts at the top of the picture
+.project-card .project-card-title {
+  margin: 0 0 4px;
+  padding: 0;
+  line-height: 1.3;
+}
+
+// Tags in one row
+.project-card-tags {
+  margin: 8px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-card-tag {
+  font-size: 0.8rem;
+  padding: 0 5px;
+  border: 1px solid currentColor;
+}
+
+// Description under the tags
+.project-card .project-card-desc {
+  margin: 0;
+  line-height: 1.7;
+}
+
+// On phone: picture on top, text below
+@media (max-width: 600px) {
+  .project-card { flex-direction: column; }
+  .project-card-media { flex: none; width: 100%; }
+  .project-card-media img, .project-card-media video { width: 100%; }
+}
+
+// ================= Milky Way background (dark mode only) =================
+
+// Angle of the Milky Way band on the screen
+$band-angle: -23deg;
+// How long one full turn of the sky takes (bigger = slower)
+$turn-time: 900s;
+
+// Star color: mostly white, sometimes bluish or warm
+@function star-color($alpha) {
+  $pick: math.random(10);
+  @if $pick <= 2 { @return rgba(200, 215, 255, $alpha); }
+  @if $pick <= 4 { @return rgba(255, 228, 200, $alpha); }
+  @return rgba(255, 255, 255, $alpha);
+}
+
+// Stars spread over the whole sky (around the screen center)
+@function make-sky-stars($count, $blur, $spread, $min-alpha) {
+  $list: ();
+  @for $i from 1 through $count {
+    $x: (math.random(3200) - 1600) * 1px;
+    $y: (math.random(3200) - 1600) * 1px;
+    $color: star-color(math.random(45) * 0.01 + $min-alpha);
+    $list: list.append($list, $x $y $blur $spread $color, $separator: comma);
+  }
+  @return $list;
+}
+
+// Thousands of tiny stars packed into the Milky Way band.
+// Adding three random numbers makes most stars land near the middle of the band.
+@function make-band-stars($count) {
+  $list: ();
+  $slope: math.tan($band-angle);
+  @for $i from 1 through $count {
+    $x: math.random(3200) - 1600;
+    $offset: math.random(220) + math.random(220) + math.random(220) - 330;
+    $y: $x * $slope + $offset;
+    // stars closer to the middle of the band are a bit brighter
+    $alpha: math.random(35) * 0.01 + 0.15 + (1 - math.abs($offset) / 330) * 0.3;
+    $blur: if(math.random(5) == 1, 2px, 1px);
+    $list: list.append($list, ($x * 1px) ($y * 1px) $blur 0 star-color($alpha), $separator: comma);
+  }
+  @return $list;
+}
+
+// Glow of the galaxy: warm core, colored clouds and dark dust lanes
+html.dark::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 3200px;
+  height: 3200px;
+  margin: -1600px 0 0 -1600px;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    // dark dust lanes cutting through the band
+    radial-gradient(ellipse 30% 0.9% at 46% 50.4%, rgba(8, 8, 16, 0.75), transparent 100%),
+    radial-gradient(ellipse 14% 0.7% at 60% 49.7%, rgba(8, 8, 16, 0.6), transparent 100%),
+    radial-gradient(ellipse 10% 0.6% at 34% 50.8%, rgba(8, 8, 16, 0.55), transparent 100%),
+    // bright warm core of the galaxy
+    radial-gradient(ellipse 9% 4% at 50% 50%, rgba(255, 225, 185, 0.32), transparent 100%),
+    radial-gradient(ellipse 18% 6% at 50% 50%, rgba(255, 200, 160, 0.14), transparent 100%),
+    // colored clouds along the band
+    radial-gradient(ellipse 12% 3.5% at 36% 49.5%, rgba(170, 180, 255, 0.16), transparent 100%),
+    radial-gradient(ellipse 10% 3% at 64% 50.5%, rgba(210, 160, 230, 0.13), transparent 100%),
+    radial-gradient(ellipse 8% 2.5% at 26% 50.3%, rgba(140, 170, 255, 0.10), transparent 100%),
+    radial-gradient(ellipse 8% 2.5% at 74% 49.6%, rgba(230, 170, 210, 0.09), transparent 100%),
+    // wide soft haze of the whole band
+    radial-gradient(ellipse 48% 7% at 50% 50%, rgba(190, 190, 230, 0.12), transparent 100%);
+  animation: glow-turn $turn-time linear infinite;
+}
+
+// Tiny stars in the band + stars all over the sky
+html.dark body::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+  box-shadow: list.join(make-band-stars(900), make-sky-stars(350, 1px, 0, 0.3), $separator: comma);
+  animation: sky-turn $turn-time linear infinite;
+}
+
+// Bright glowing stars that twinkle
+html.dark body::after {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+  box-shadow: make-sky-stars(60, 5px, 1px, 0.5);
+  animation: sky-turn $turn-time linear infinite, twinkle 5s ease-in-out infinite alternate;
+}
+
+// Stars turn around the screen center
+@keyframes sky-turn {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+// Glow turns at the same speed, starting already tilted like the band
+@keyframes glow-turn {
+  from { transform: rotate($band-angle); }
+  to   { transform: rotate($band-angle + 360deg); }
+}
+
+// Bright stars get brighter and dimmer
+@keyframes twinkle {
+  from { opacity: 0.55; }
+  to   { opacity: 1; }
+}
+
+// No movement for people who turned on "reduce motion"
+@media (prefers-reduced-motion: reduce) {
+  html.dark::before,
+  html.dark body::before,
+  html.dark body::after {
+    animation: none;
+  }
+}
