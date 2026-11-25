@@ -1,0 +1,4 @@
+# Made by Hugo on every build: GitHub Actions builds the site itself
+public/
+resources/_gen/
+.hugo_build.lock
