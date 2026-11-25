@@ -23,6 +23,10 @@ One website where each person fills in only their own part:
 - **Print / PDF**: all forms look like the paper ones and can be printed.
 - **Emails**: the student and the tutor get their links by email.
 
+## How it works
+
+{{< screenshot src="images/forms/how-it-works.png" caption="AMFI fills in one form, the student and the tutor fill in their parts, the certificate appears by itself" >}}
+
 ## Screenshots
 
 <p class="note">The screenshots use demo data: the names, emails and numbers are not real.</p>
