@@ -1,0 +1,29 @@
+{{/* Footer: icons, contacts as text, copyright (copy of the theme footer + contacts line) */}}
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+        {{- partial "socialIcons.html" site.Params.socialIcons -}}
+    </div>
+
+    {{/* Email and GitHub as text, so people see how to contact me */}}
+    {{ with site.Params.author }}
+    <p class="footer_contacts">
+        {{ with .email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
+        {{ if and .email .github }}<span aria-hidden="true">·</span>{{ end }}
+        {{ with .github }}<a href="https://github.com/{{ . }}" target="_blank" rel="noopener noreferrer">github.com/{{ . }}</a>{{ end }}
+    </p>
+    {{ end }}
+
+    <small class="footer_copyright">
+        © {{ now.Format "2006" }} {{ .Site.Params.author.name }}.
+        {{ T "footer.disclaimer" | safeHTML }}
+    </small>
+</footer>
+
+{{- if .Site.Params.goToTop -}}
+<a href="#" title="{{ T "footer.go_to_top" }}" id="totop">
+    {{ partial "svgs/arrowUp.svg" (dict "height" 48 "width" 48) . }}
+</a>
+{{- end -}}

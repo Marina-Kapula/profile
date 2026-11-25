@@ -69,6 +69,8 @@ enableEmoji = true
   intro = "Maryna Kapula"
   name = "Maryna Kapula"
   description = "I build websites and forms that are easy to use."
+  email = "maryna.kapula@gmail.com"
+  github = "Marina-Kapula"
 
 # Allow to override webmanifest options
 [Languages.en-gb.params.webmanifest]

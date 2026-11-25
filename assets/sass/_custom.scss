@@ -78,3 +78,19 @@
 html:not(.dark) #sky {
   display: none;
 }
+
+// ================= Footer contacts (email and GitHub as text) =================
+.footer_contacts {
+  margin: 0.6em 0 0.4em;
+  font-size: 0.95rem;
+  opacity: 0.85;
+
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+
+  span {
+    margin: 0 0.5em;
+  }
+}
