@@ -3,7 +3,7 @@ title: "AMFI Meetups"
 date: 2026-11-25
 draft: false
 toc: false
-image: "images/events.jpg"
+image: "images/events-meetups.jpg"
 description: "A website where Erasmus students create and join meetups: food, trips and new friends. Built with Django and Tailwind during my internship in Italy."
 tags: ["Django", "Python", "Tailwind", "HTML"]
 ---
