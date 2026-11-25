@@ -11,20 +11,20 @@ Right now I'm doing an Erasmus+ internship at Go Project in Italy.
 
 ## Experience
 
-**Intern (Erasmus+)**
+**Intern (Erasmus+)**\
 Go Project · Italy · November 2026
 
 ## Education
 
-**Information and Communications Technology (ICT)**
-Esedu, South Savo Vocational College · Mikkeli, Finland
+**Information and Communications Technology (ICT)**\
+Esedu, South Savo Vocational College · Mikkeli, Finland\
 2025 – present
 
-**Artist-restorer**
-Tulchyn College of Culture · Tulchyn, Ukraine
+**Artist-restorer**\
+Tulchyn College of Culture · Tulchyn, Ukraine\
 2017 – 2021
 
 ## Contact
 
-Email: maryna.kapula@gmail.com
+Email: [maryna.kapula@gmail.com](mailto:maryna.kapula@gmail.com)\
 GitHub: [Marina-Kapula](https://github.com/Marina-Kapula)

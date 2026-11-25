@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CSS on Awesome Hugo blog</title>
-    <link>http://localhost:1313/tags/css/</link>
-    <description>Recent content in CSS on Awesome Hugo blog</description>
+    <title>CSS on Maryna Kapula</title>
+    <link>http://localhost:1313/profile/tags/css/</link>
+    <description>Recent content in CSS on Maryna Kapula</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/profile/tags/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AMFI forms website</title>
-      <link>http://localhost:1313/projects/amfi/</link>
+      <title>AMFI Forms web app</title>
+      <link>http://localhost:1313/profile/projects/amfi/</link>
       <pubDate>Tue, 17 Nov 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/amfi/</guid>
+      <guid>http://localhost:1313/profile/projects/amfi/</guid>
       
       <description>&lt;p&gt;During my Erasmus+ internship at Go Project in Italy, I built a website for AMFI. It replaces paper internship forms with online forms.&lt;/p&gt;
 &lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;

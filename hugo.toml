@@ -1,6 +1,6 @@
 theme = "hugo-blog-awesome"
-title = "Awesome Hugo blog"
-baseURL = 'https://hba.sid.one/'
+title = "Maryna Kapula"
+baseURL = 'https://marina-kapula.github.io/profile/'
 
 # This is what goes in <html lang="">
 locale = 'en-us'
@@ -10,7 +10,6 @@ defaultContentLanguage = "en-gb"
 
 # Enable emojis globally
 enableEmoji = true
-ignoreErrors = ["additional-script-loading-error"] # ignore error of loading additional scripts.
 
 [services]
   [services.googleAnalytics]
@@ -54,27 +53,27 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
     weight = 30
 
 [Languages.en-gb.params]
-  sitename = "Awesome hugo blog"
+  sitename = "Maryna Kapula"
   defaultColor = "dark" # set color mode: dark, light, auto
-  description = "Minimal Hugo blog theme with light and dark mode support"
-    mainSections = ['projects']
+  description = "Maryna Kapula - ICT student and web developer. I build websites and forms that are easy to use."
+  mainSections = ['projects']
   toc = true # set to false to disable table of contents 'globally'
   tocOpen = false # set to true to open table of contents by default
   goToTop = true # set to false to disable 'go to top' button
-  additionalScripts = ['js/custom.js', 'js/custom-2.js']
+  additionalScripts = ['js/custom.js']
   dateFormat = "" # empty = "2 Jan 2006" format
   rssFeedDescription = "summary" # summary or full
 
 [Languages.en-gb.params.author]
   avatar = "cat.jpg" # put the file in assets folder; image must be square
-  intro = "Marina Kapula"
+  intro = "Maryna Kapula"
   name = "Maryna Kapula"
   description = "I build websites and forms that are easy to use."
 
 # Allow to override webmanifest options
 [Languages.en-gb.params.webmanifest]
-  name = "sitename"
-  short_name = "sitename"
+  name = "Maryna Kapula"
+  short_name = "Maryna Kapula"
   start_url = "/"
   theme_color = "#434648"
   background_color = "#fff"
@@ -88,12 +87,12 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
 
 [[params.socialIcons]]
 name = "github"
-url = "https://github.com/hugo-sid"
+url = "https://github.com/Marina-Kapula"
 
 [[params.socialIcons]]
-name = "twitter"
-url = "https://twitter.com"
+name = "email"
+url = "mailto:maryna.kapula@gmail.com"
 
 [[params.socialIcons]]
-name = "Rss"
-url = "/index.xml"
+name = "rss"
+url = "https://marina-kapula.github.io/profile/index.xml"
