@@ -33,18 +33,18 @@ A small website, like Meetup, only for AMFI students:
 
 The home page shows the next events. The search form filters them by keyword, city, date, type and size.
 
-{{< screenshot src="images/meetups/home.jpg" caption="Home page with search and event cards" >}}
+{{< screenshot src="images/meetups/home-v2.jpg" caption="Home page with search and event cards" >}}
 
 ### Event page and chat
 
 Who is going, how many spots are left, and a chat for the people going.
 
-{{< screenshot src="images/meetups/event.jpg" caption="Event page: details, people going and the chat" >}}
+{{< screenshot src="images/meetups/event-v2.jpg" caption="Event page: details, people going and the chat" >}}
 
 ### My events and a new event
 
 {{< gallery >}}
-{{< screenshot src="images/meetups/my-events.jpg" caption="**My events**: events I created and events I joined" >}}
+{{< screenshot src="images/meetups/my-events-v2.jpg" caption="**My events**: events I created and events I joined" >}}
 {{< screenshot src="images/meetups/new-event.jpg" caption="**New event**: the form sends the event to AMFI for review" >}}
 {{< /gallery >}}
 
@@ -53,8 +53,8 @@ Who is going, how many spots are left, and a chat for the people going.
 On a phone the menu moves to the bottom of the screen, so it is easy to reach with a thumb.
 
 {{< gallery class="phones" >}}
-{{< screenshot src="images/meetups/phone-cards.jpg" caption="Event list" >}}
-{{< screenshot src="images/meetups/phone-event.jpg" caption="Event page" >}}
+{{< screenshot src="images/meetups/phone-cards-v2.jpg" caption="Event list" >}}
+{{< screenshot src="images/meetups/phone-event-v2.jpg" caption="Event page" >}}
 {{< /gallery >}}
 
 ### For the AMFI admin
