@@ -26,8 +26,11 @@ jobs:
           hugo-version: "0.170.0"
           extended: true
 
+      - name: Install Dart Sass (turns .scss styles into CSS)
+        run: sudo snap install dart-sass
+
       - name: Get the code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Pages
         id: pages
