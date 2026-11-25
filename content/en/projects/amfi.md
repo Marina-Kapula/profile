@@ -25,7 +25,7 @@ One website where each person fills in only their own part:
 
 ## How it works
 
-{{< screenshot src="images/forms/how-it-works.png" caption="AMFI fills in one form, the student and the tutor fill in their parts, the certificate appears by itself" >}}
+{{< screenshot src="images/forms/how-it-works-v2.png" caption="AMFI fills in one form, the student and the tutor fill in their parts, the certificate appears by itself" >}}
 
 ## Screenshots
 
