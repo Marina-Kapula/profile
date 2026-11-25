@@ -57,7 +57,7 @@ The tutor opens a personal link, checks every week and approves it with one butt
 ### On a phone
 
 {{< gallery class="phones" >}}
-{{< screenshot src="images/forms/phone-login.jpg" caption="Log in" >}}
+{{< screenshot src="images/forms/phone-login-v2.jpg" caption="Log in" >}}
 {{< screenshot src="images/forms/phone-tutor.jpg" caption="The certificate, ready" >}}
 {{< /gallery >}}
 
