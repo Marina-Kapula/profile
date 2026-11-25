@@ -1,0 +1,11 @@
+{{/*
+  Puts several screenshots side by side (one under another on a phone):
+  {{< gallery >}}
+    {{< screenshot src="images/a.png" caption="First" >}}
+    {{< screenshot src="images/b.png" caption="Second" >}}
+  {{< /gallery >}}
+  For phone screenshots use {{< gallery class="phones" >}}: narrower, so they are not huge.
+*/}}
+<div class="gallery {{ .Get "class" }}">
+    {{ .Inner }}
+</div>
