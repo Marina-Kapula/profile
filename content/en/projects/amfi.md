@@ -82,3 +82,7 @@ The tutor opens a personal link, checks every week and approves it with one butt
 ## Tools
 
 Python, Django, HTML, CSS, JavaScript, SQLite, Docker, Dokku, Git and GitHub.
+
+## Thank you
+
+A big thank you to **[Hakan Ates](https://ateshakan.com/)**, a software engineer at Go Project who helps Erasmus+ exchange students with their internship projects. He guided me through every step: planning, code, testing and putting the site on a server. He explained everything step by step, and I learned a lot from him. I am really grateful for his help and support. His GitHub: [github.com/ateshakan](https://github.com/ateshakan).

@@ -1,0 +1,6 @@
+{{- /* Markdown links: links to other sites open in a new tab, links inside this site stay in the same tab */ -}}
+{{- $u := urls.Parse .Destination -}}
+<a href="{{ .Destination | safeURL }}"
+  {{- with .Title }} title="{{ . }}"{{ end }}
+  {{- if in (slice "http" "https") $u.Scheme }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text }}</a>
+{{- /* no newline at the end */ -}}
