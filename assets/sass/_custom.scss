@@ -79,6 +79,50 @@ html:not(.dark) #sky {
   display: none;
 }
 
+// ================= Day sky canvas for light mode (made by assets/js/daysky.js) =================
+#daysky {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+// Hide the day sky in dark mode (the night sky is shown there)
+html.dark #daysky {
+  display: none;
+}
+
+// Phone: the top bar is frosted glass (like iOS) instead of plain white
+@media (max-width: 600px) {
+  html:not(.dark) .navbar .menu {
+    background-color: rgba(255, 255, 255, 0.55);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    border-bottom-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+// ================= Light / dark switch: round sun by day, moon at night =================
+// (icons in layouts/partials/svgs/round-sun.svg and moon.svg)
+.navbar .menu a#mode {
+  opacity: 1;
+
+  // the theme paints these icons black / white: our colours must win
+  svg circle.sun-disc {
+    fill: #ffc22e;
+    stroke: none;
+  }
+  svg circle.sun-glow {
+    fill: #ffd76a;
+    fill-opacity: 0.35;
+    stroke: none;
+  }
+  svg path.moon-shape {
+    fill: #f3e9c6;
+    stroke: none;
+  }
+}
+
 // ================= Project page (layouts/projects/single.html) =================
 
 // A bit wider than a normal text page, so pictures are big
@@ -218,4 +262,8 @@ html:not(.dark) #sky {
   span {
     margin: 0 0.5em;
   }
+}
+// No focus frame around the sun / moon after a mouse click (keyboard users still see it)
+.navbar .menu a#mode:focus:not(:focus-visible) {
+  outline: none;
 }

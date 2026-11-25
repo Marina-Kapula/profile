@@ -1,0 +1,2 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="{{ .class }}" width="{{ .width }}" height="{{ .height }}" viewBox="0 0 24 24">
+<title>{{ .title }}</title><circle class="sun-glow" cx="12" cy="12" r="11"></circle><circle class="sun-disc" cx="12" cy="12" r="7.5"></circle></svg>

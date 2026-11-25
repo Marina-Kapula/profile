@@ -60,7 +60,7 @@ enableEmoji = true
   toc = true # set to false to disable table of contents 'globally'
   tocOpen = false # set to true to open table of contents by default
   goToTop = true # set to false to disable 'go to top' button
-  additionalScripts = ['js/custom.js']
+  additionalScripts = ['js/custom.js', 'js/daysky.js']
   dateFormat = "" # empty = "2 Jan 2006" format
   rssFeedDescription = "summary" # summary or full
 
