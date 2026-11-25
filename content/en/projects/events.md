@@ -25,6 +25,10 @@ A small website, like Meetup, only for AMFI students:
 - **Register with a QR code.** At the welcome meeting the admin shows a QR code. Students scan it and sign up on their phone. The code works only for a short time.
 - **Emails.** You get an email when your event is approved, when you get a spot, or when an event is cancelled.
 
+## How it works
+
+{{< screenshot src="images/meetups/how-it-works.png" caption="A student creates an event, AMFI reviews it, other students join, everyone meets" >}}
+
 ## Screenshots
 
 <p class="note">The screenshots use demo data: the names and people are not real.</p>
