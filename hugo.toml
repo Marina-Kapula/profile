@@ -11,6 +11,9 @@ defaultContentLanguage = "en-gb"
 # Enable emojis globally
 enableEmoji = true
 
+# No tag / category pages: tags on the site are only labels, not links
+disableKinds = ['taxonomy', 'term']
+
 [services]
   [services.googleAnalytics]
     id = '' # G-MEASUREMENT_ID
@@ -94,7 +97,3 @@ url = "https://github.com/Marina-Kapula"
 [[params.socialIcons]]
 name = "email"
 url = "mailto:maryna.kapula@gmail.com"
-
-[[params.socialIcons]]
-name = "rss"
-url = "https://marina-kapula.github.io/profile/index.xml"
