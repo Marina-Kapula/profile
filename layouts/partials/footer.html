@@ -1,11 +1,7 @@
-{{/* Footer: icons, contacts as text, copyright (copy of the theme footer + contacts line) */}}
+{{/* Footer: contacts as text and copyright (copy of the theme footer, without the icons: they only repeated the contacts) */}}
 <footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
-
-    <div class="footer_social-icons">
-        {{- partial "socialIcons.html" site.Params.socialIcons -}}
-    </div>
 
     {{/* Email and GitHub as text, so people see how to contact me */}}
     {{ with site.Params.author }}
